@@ -1,0 +1,11 @@
+
+def fn_int_to_binary(int):
+    binary = ''
+    while(int > 0):
+        digit = int % 2
+        binary = binary+str(digit)
+        int = int // 2
+    binary = binary[::-1]
+    return binary
+f=int(input('Enter the integer to find binary number equivalent:  '))
+print('The binary equivalent is : ',fn_int_to_binary(f))
