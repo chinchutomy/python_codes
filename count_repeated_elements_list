@@ -1,0 +1,13 @@
+def fn_remove_repeated_elements(lst):
+    new_list = [] 
+    for i in range(len(lst)):
+        if lst[i] not in new_list:
+            new_list.append(lst[i])
+    return new_list
+    
+
+input_list = [1, 1, 2, 2, 3, 1, 4]
+output_list = fn_remove_repeated_elements(input_list)
+print("New list after removing the duplicates is:", output_list)
+counter=len(input_list)-len(output_list)
+print('the no of repeated elements is: ',counter)
